@@ -194,10 +194,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CleanSweep459" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -273,8 +273,8 @@
             </option>
             <option name="goals">
               <list>
-                <option value="install" />
-                <option value="package" />
+                <option value="test" />
+                <option value="-B" />
               </list>
             </option>
             <option name="pomFileName" />
@@ -315,7 +315,7 @@
       <updated>1572207323114</updated>
       <workItem from="1572207326513" duration="19047000" />
       <workItem from="1572227702863" duration="5108000" />
-      <workItem from="1572822146000" duration="2870000" />
+      <workItem from="1572822146000" duration="3554000" />
     </task>
     <servers />
   </component>
@@ -352,16 +352,15 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27025000" />
+    <option name="totallyTimeSpent" value="27709000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Learn" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.22068231" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.22068231" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
@@ -372,7 +371,7 @@
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -480,6 +479,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -491,6 +491,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>org.junit.jupiter:junit-jupiter-api:5.0.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -502,6 +503,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -513,6 +515,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>hw3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -524,6 +527,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: com.netflix.archaius:archaius-core:0.4.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

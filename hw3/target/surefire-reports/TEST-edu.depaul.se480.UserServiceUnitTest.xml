@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="D:\Program Files (x86)\jdk1.8.0_71\jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.1.4 install package"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.1.4 test -B"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="idea.version2019.1.4" value="true"/>

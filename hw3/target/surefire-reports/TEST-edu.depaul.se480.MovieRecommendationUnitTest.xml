@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="edu.depaul.se480.MovieRecommendationUnitTest" time="6.275" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="edu.depaul.se480.MovieRecommendationUnitTest" time="6.787" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\Program Files (x86)\jdk1.8.0_71\jre\bin"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="D:\Program Files (x86)\jdk1.8.0_71\jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.1.4 install package"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.1.4 test -B"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="idea.version2019.1.4" value="true"/>
@@ -63,8 +63,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="edu.depaul.se480.MovieRecommendationUnitTest" name="successful_older17_test" time="0.95"/>
-  <testcase classname="edu.depaul.se480.MovieRecommendationUnitTest" name="mock_successful_tests" time="5.325"/>
+  <testcase classname="edu.depaul.se480.MovieRecommendationUnitTest" name="successful_older17_test" time="1.289"/>
+  <testcase classname="edu.depaul.se480.MovieRecommendationUnitTest" name="mock_successful_tests" time="5.498"/>
   <testcase classname="edu.depaul.se480.MovieRecommendationUnitTest" name="successful_under13_test" time="0"/>
   <testcase classname="edu.depaul.se480.MovieRecommendationUnitTest" name="successful_older13younger17_test" time="0"/>
 </testsuite>
