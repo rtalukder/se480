@@ -1,5 +1,10 @@
 package edu.depaul.se480;
 
+/**
+ * Class: SE480 - class to read in files
+ * Author: Raquib Talukder
+ **/
+
 public class ReadInputFile {
     private String filename;
 
