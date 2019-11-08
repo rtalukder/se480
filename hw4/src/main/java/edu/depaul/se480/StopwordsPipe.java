@@ -26,7 +26,8 @@ public class StopwordsPipe {
         ReadTestFile();
         CleanTestFile();
         ItemizeLines();
-        this.nextPipe = new NonAlphabeticalPipe();
+        //this.nextPipe = new NonAlphabeticalPipe(cleanedItemizedWordsArrayList);
+        //System.out.println(nextPipe.RemoveNonAlpabeticalPipe());
     }
 
     private void ReadStopwordsFile(){
@@ -77,6 +78,7 @@ public class StopwordsPipe {
 
     public ArrayList<String> RemoveStopwords(){
         boolean removedStopwordsArrayListBool = cleanedItemizedWordsArrayList.removeAll(stopwordsArrayList);
+        System.out.println(removedStopwordsArrayListBool);
         System.out.println(cleanedItemizedWordsArrayList.toString());
         if (removedStopwordsArrayListBool) return cleanedItemizedWordsArrayList;
         else return cleanedItemizedWordsArrayList;
