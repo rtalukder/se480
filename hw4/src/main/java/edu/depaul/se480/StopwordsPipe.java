@@ -78,8 +78,6 @@ public class StopwordsPipe {
 
     public ArrayList<String> RemoveStopwords(){
         boolean removedStopwordsArrayListBool = cleanedItemizedWordsArrayList.removeAll(stopwordsArrayList);
-        System.out.println(removedStopwordsArrayListBool);
-        System.out.println(cleanedItemizedWordsArrayList.toString());
         if (removedStopwordsArrayListBool) return cleanedItemizedWordsArrayList;
         else return cleanedItemizedWordsArrayList;
     }

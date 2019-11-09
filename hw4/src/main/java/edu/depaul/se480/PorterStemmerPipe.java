@@ -429,8 +429,6 @@ public class PorterStemmerPipe {
 
                                     /* to test getResultBuffer(), getResultLength() : */
                                     /* u = new String(s.getResultBuffer(), 0, s.getResultLength()); */
-
-                                    System.out.print(u);
                                     cleanedRootArrayList.add(u);
                                 }
                                 break;
@@ -439,7 +437,6 @@ public class PorterStemmerPipe {
                     }
 
                     if (ch < 0) break;
-                    System.out.print((char) ch);
                 }
             }
             catch (IOException e) {

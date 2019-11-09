@@ -1,5 +1,8 @@
 package edu.depaul.se480;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
 /**
@@ -25,6 +28,17 @@ public class NonAlphabeticalPipe {
         return cleanedNonAlphabeticalArrayList;
     }
 
+    public String ArrayListToFile() throws IOException {
+        String fileName = "temp.txt";
 
+        FileWriter fileWriter = new FileWriter(fileName);
+        PrintWriter printWriter = new PrintWriter(fileWriter);
+        printWriter.flush();
+        for(String words : cleanedNonAlphabeticalArrayList){
+            printWriter.println(words);
+        }
+        printWriter.close();
+        return fileName;
+    }
 
 }
