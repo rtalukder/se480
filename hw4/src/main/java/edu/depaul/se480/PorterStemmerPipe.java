@@ -6,7 +6,6 @@ package edu.depaul.se480;
  * Author: Raquib Talukder
  **/
 
-
 /*
 
    Porter stemmer in Java. The original paper is in
@@ -42,6 +41,7 @@ package edu.depaul.se480;
 */
 
 import java.io.*;
+import java.util.ArrayList;
 
 /**
  * Stemmer, implementing the Porter Stemming Algorithm
@@ -59,6 +59,8 @@ public class PorterStemmerPipe {
 
     private static final int INC = 50;
     /* unit of size whereby b is increased */
+
+    private ArrayList<String> cleanedRootArrayList = new ArrayList<>();
 
     public PorterStemmerPipe() {
         b = new char[INC];
@@ -393,26 +395,21 @@ public class PorterStemmerPipe {
         i_end = k+1; i = 0;
     }
 
-    /** Test program for demonstrating the Stemmer.  It reads text from a
-     * a list of files, stems each word, and writes the result to standard
-     * output. Note that the word stemmed is expected to be in lower case:
-     * forcing lower case must be done outside the Stemmer class.
-     * Usage: Stemmer file-name file-name ...
-     */
-    public static void main(String[] args) {
+    public ArrayList<String> RootWordsPipe(String nonRootFilename){
         char[] w = new char[501];
+        String userFilepath = System.getProperty("user.dir");
+        String testfileFilepath = userFilepath + "/" + nonRootFilename;
         PorterStemmerPipe s = new PorterStemmerPipe();
-        for (int i = 0; i < args.length; i++)
-            try {
-                FileInputStream in = new FileInputStream(args[i]);
+        try {
+            FileInputStream in = new FileInputStream(testfileFilepath);
 
-                try {
-                    while(true) {
-                        int ch = in.read();
-                        if (Character.isLetter((char) ch)) {
+            try {
+                while (true) {
+                    int ch = in.read();
+                    if (Character.isLetter((char) ch)) {
                         int j = 0;
 
-                        while(true) {
+                        while (true) {
                             ch = Character.toLowerCase((char) ch);
                             w[j] = (char) ch;
                             if (j < 500) j++;
@@ -434,6 +431,7 @@ public class PorterStemmerPipe {
                                     /* u = new String(s.getResultBuffer(), 0, s.getResultLength()); */
 
                                     System.out.print(u);
+                                    cleanedRootArrayList.add(u);
                                 }
                                 break;
                             }
@@ -441,17 +439,19 @@ public class PorterStemmerPipe {
                     }
 
                     if (ch < 0) break;
-                    System.out.print((char)ch);
-                    }
-                }
-                catch (IOException e) {
-                    System.out.println("error reading " + args[i]);
-                    break;
+                    System.out.print((char) ch);
                 }
             }
-            catch (FileNotFoundException e) {
-                System.out.println("file " + args[i] + " not found");
-                break;
+            catch (IOException e) {
+                System.out.println("error reading");
             }
+        }
+        catch (FileNotFoundException e) {
+            System.out.println("file not found");
+        }
+
+        System.out.println(cleanedRootArrayList.toString());
+        return cleanedRootArrayList;
     }
 }
+
