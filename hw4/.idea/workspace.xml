@@ -10,8 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="hw4" />
@@ -60,11 +59,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
               <caret line="24" selection-start-line="24" selection-end-line="29" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/PorterStemmerPipe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="454" column="12" lean-forward="true" selection-start-line="454" selection-start-column="12" selection-end-line="454" selection-end-column="12" />
+              <folding>
+                <element signature="e#2759#2760#0" expanded="true" />
+                <element signature="e#2803#2804#0" expanded="true" />
+                <element signature="e#2930#2931#0" expanded="true" />
+                <element signature="e#2958#2959#0" expanded="true" />
+                <element signature="e#3191#3192#0" expanded="true" />
+                <element signature="e#3215#3216#0" expanded="true" />
+                <element signature="e#6010#6011#0" expanded="true" />
+                <element signature="e#6047#6048#0" expanded="true" />
+                <element signature="e#7386#7387#0" expanded="true" />
+                <element signature="e#7444#7445#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,6 +114,7 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/depaul/se480/NonAlphabeticalPipe.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/depaul/se480/DataSinkPipe.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/depaul/se480/main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/depaul/se480/PorterStemmerPipe.java" />
       </list>
     </option>
   </component>
@@ -235,12 +256,12 @@
       <workItem from="1573139370328" duration="919000" />
       <workItem from="1573141178092" duration="12945000" />
       <workItem from="1573177452990" duration="4030000" />
-      <workItem from="1573248863659" duration="3084000" />
+      <workItem from="1573248863659" duration="4500000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7114000" />
+    <option name="totallyTimeSpent" value="8530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="962" extended-state="0" />
@@ -248,7 +269,7 @@
     <layout>
       <window_info id="Capture Tool" order="0" />
       <window_info id="Image Layers" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49925485" visible="true" weight="0.25274727" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49925485" visible="true" weight="0.25274727" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -256,7 +277,7 @@
       <window_info id="Favorites" order="7" sideWeight="0.5007452" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3494687" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3494687" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -362,6 +383,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" selection-start-line="24" selection-end-line="29" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/PorterStemmerPipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="454" column="12" lean-forward="true" selection-start-line="454" selection-start-column="12" selection-end-line="454" selection-end-column="12" />
+          <folding>
+            <element signature="e#2759#2760#0" expanded="true" />
+            <element signature="e#2803#2804#0" expanded="true" />
+            <element signature="e#2930#2931#0" expanded="true" />
+            <element signature="e#2958#2959#0" expanded="true" />
+            <element signature="e#3191#3192#0" expanded="true" />
+            <element signature="e#3215#3216#0" expanded="true" />
+            <element signature="e#6010#6011#0" expanded="true" />
+            <element signature="e#6047#6048#0" expanded="true" />
+            <element signature="e#7386#7387#0" expanded="true" />
+            <element signature="e#7444#7445#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
