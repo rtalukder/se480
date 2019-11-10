@@ -8,6 +8,8 @@ import java.util.ArrayList;
 /**
  * Class: SE480 - Pipe to get rid of non-alphabetical characters
  * Author: Raquib Talukder
+ * Sources Used: https://alvinalexander.com/blog/post/java/remove-non-alphanumeric-characters-java-string (1)
+ *               https://www.baeldung.com/java-write-to-file (2)
  **/
 
 public class NonAlphabeticalPipe {
@@ -17,12 +19,13 @@ public class NonAlphabeticalPipe {
 
     public NonAlphabeticalPipe(ArrayList<String> noStopwordsArrayList) throws IOException {
         this.noStopwordsArrayList = noStopwordsArrayList;
-        String tempFile = ArrayListToFile();
         this.porterStemmerPipe = new PorterStemmerPipe();
         RemoveNonAlpabeticalPipe();
-        porterStemmerPipe.RootWordsPipe(ArrayListToFile());
+        String tempFile = ArrayListToFile();
+        porterStemmerPipe.RootWordsPipe(tempFile);
     }
 
+    // source (1) used
     public ArrayList<String> RemoveNonAlpabeticalPipe(){
         for (String words : noStopwordsArrayList){
             String cleanedWord = words.trim().replaceAll("[^a-zA-Z0-9]", "");
@@ -33,15 +36,18 @@ public class NonAlphabeticalPipe {
         return cleanedNonAlphabeticalArrayList;
     }
 
+    // source (2) used
     public String ArrayListToFile() throws IOException {
         String fileName = "temp.txt";
 
         FileWriter fileWriter = new FileWriter(fileName);
         PrintWriter printWriter = new PrintWriter(fileWriter);
         printWriter.flush();
+
         for(String words : cleanedNonAlphabeticalArrayList){
             printWriter.println(words);
         }
+
         printWriter.close();
         return fileName;
     }

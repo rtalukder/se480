@@ -10,6 +10,7 @@ import java.util.List;
 /**
  * Class: SE480 - Pipe to get rid of stopwords
  * Author: Raquib Talukder
+ * Sources Used: https://www.baeldung.com/java-string-remove-stopwords (1)
  **/
 
 public class StopwordsPipe {
@@ -29,6 +30,7 @@ public class StopwordsPipe {
         this.nextPipe = new NonAlphabeticalPipe(RemoveStopwords());
     }
 
+    // source (1) used
     private void ReadStopwordsFile(){
         String userFilepath = System.getProperty("user.dir");
         String stopwordsFilepath = userFilepath + "/stopwords.txt";
@@ -42,6 +44,7 @@ public class StopwordsPipe {
         }
     }
 
+    // source (1) used
     private void ReadTestFile(){
         String userFilepath = System.getProperty("user.dir");
         String testfileFilepath = userFilepath + "/" + fileName;

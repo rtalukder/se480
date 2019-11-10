@@ -1,7 +1,5 @@
 package edu.depaul.se480;
 
-import com.sun.prism.paint.Stop;
-
 import java.io.IOException;
 
 /**

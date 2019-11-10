@@ -22,7 +22,6 @@ public class DataSinkPipe {
                 .collect(Collectors.toList());
 
         System.out.println(result.toString());
-
         return result;
     }
 

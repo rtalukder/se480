@@ -2,8 +2,14 @@ package edu.depaul.se480;
 
 /**
  * Class: SE480 - Pipe that utilizes the Porter Stemmer algorithm to
- *                stem words to their morphological root
+ *                stem words to their morphological root.
+ *
+ *                The implmentation was taken from the source below
+ *                and modified to work with my other classes for this
+ *                assignment.
+ *
  * Author: Raquib Talukder
+ * Sources Used: https://tartarus.org/martin/PorterStemmer/java.txt
  **/
 
 /*
@@ -40,7 +46,6 @@ package edu.depaul.se480;
 
 */
 
-import javax.xml.crypto.Data;
 import java.io.*;
 import java.util.ArrayList;
 
@@ -450,6 +455,7 @@ public class PorterStemmerPipe {
         catch (FileNotFoundException e) {
             System.out.println("file not found");
         }
+
         dataSinkPipe.OrderTopTen(cleanedRootArrayList);
         return cleanedRootArrayList;
     }
