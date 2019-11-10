@@ -9,14 +9,10 @@ import java.util.stream.Collectors;
  **/
 
 public class DataSinkPipe {
-    private ArrayList<String> morphologicalRootsArrayList;
-    private ArrayList<String> topTenWords = new ArrayList<>();
 
-    public DataSinkPipe(ArrayList<String> morphologicalRootsArrayList){
-        this.morphologicalRootsArrayList = morphologicalRootsArrayList;
-    }
+    public DataSinkPipe(){}
 
-    public List<Map.Entry<String, Long>> OrderTopTen(){
+    public List<Map.Entry<String, Long>> OrderTopTen(ArrayList<String> morphologicalRootsArrayList){
         Map<String, Long> map = morphologicalRootsArrayList.stream()
                 .collect(Collectors.groupingBy(w -> w, Collectors.counting()));
 

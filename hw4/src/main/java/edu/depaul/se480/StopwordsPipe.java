@@ -20,14 +20,13 @@ public class StopwordsPipe {
     private String fileName;
     private NonAlphabeticalPipe nextPipe;
 
-    public StopwordsPipe(String fileName){
+    public StopwordsPipe(String fileName) throws IOException {
         this.fileName = fileName;
         ReadStopwordsFile();
         ReadTestFile();
         CleanTestFile();
         ItemizeLines();
-        //this.nextPipe = new NonAlphabeticalPipe(cleanedItemizedWordsArrayList);
-        //System.out.println(nextPipe.RemoveNonAlpabeticalPipe());
+        this.nextPipe = new NonAlphabeticalPipe(RemoveStopwords());
     }
 
     private void ReadStopwordsFile(){

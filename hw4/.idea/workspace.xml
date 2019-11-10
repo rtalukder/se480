@@ -20,8 +20,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/ReadInputFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+            <state relative-caret-position="255">
+              <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#346#347#0" expanded="true" />
+                <element signature="e#378#379#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -29,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/StopwordsPipe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1074">
-              <caret line="79" column="108" selection-start-line="79" selection-start-column="108" selection-end-line="79" selection-end-column="108" />
+            <state relative-caret-position="92">
+              <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,8 +46,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/NonAlphabeticalPipe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+            <state relative-caret-position="69">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/PorterStemmerPipe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="452" column="14" lean-forward="true" selection-start-line="452" selection-start-column="14" selection-end-line="452" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/DataSinkPipe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="180">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,23 +82,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1573331928026" expanded="true" signature="1340:2247" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/PorterStemmerPipe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="430" column="102" selection-start-line="430" selection-start-column="102" selection-end-line="430" selection-end-column="102" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1573344124828" expanded="true" signature="1333:2240" ph="..." />
               </folding>
             </state>
           </provider>
@@ -115,15 +120,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/edu/depaul/se480/ReadInputFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/depaul/se480/DataSinkPipe.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/depaul/se480/Stemmer.java" />
         <option value="$PROJECT_DIR$/stemmerTest.txt" />
         <option value="$PROJECT_DIR$/src/main/java/edu/depaul/se480/mainStemmer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/depaul/se480/DataSinkPipe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/depaul/se480/PorterStemmerPipe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/depaul/se480/ReadInputFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/depaul/se480/StopwordsPipe.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/depaul/se480/NonAlphabeticalPipe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/depaul/se480/PorterStemmerPipe.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/depaul/se480/main.java" />
       </list>
     </option>
@@ -254,12 +259,12 @@
       <workItem from="1573141178092" duration="12945000" />
       <workItem from="1573177452990" duration="4030000" />
       <workItem from="1573248863659" duration="10188000" />
-      <workItem from="1573327279755" duration="2836000" />
+      <workItem from="1573327279755" duration="6216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17054000" />
+    <option name="totallyTimeSpent" value="20434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="962" extended-state="0" />
@@ -365,23 +370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/ReadInputFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/StopwordsPipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1074">
-          <caret line="79" column="108" selection-start-line="79" selection-start-column="108" selection-end-line="79" selection-end-column="108" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/temp.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-310086" />
@@ -398,20 +386,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/PorterStemmerPipe.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/ReadInputFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="430" column="102" selection-start-line="430" selection-start-column="102" selection-end-line="430" selection-end-column="102" />
+        <state relative-caret-position="255">
+          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/DataSinkPipe.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/StopwordsPipe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="92">
+          <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -420,8 +410,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/NonAlphabeticalPipe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        <state relative-caret-position="69">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/PorterStemmerPipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="452" column="14" lean-forward="true" selection-start-line="452" selection-start-column="14" selection-end-line="452" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/DataSinkPipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -430,11 +440,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/depaul/se480/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1573331928026" expanded="true" signature="1340:2247" ph="..." />
+            <marker date="1573344124828" expanded="true" signature="1333:2240" ph="..." />
           </folding>
         </state>
       </provider>

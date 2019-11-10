@@ -40,6 +40,7 @@ package edu.depaul.se480;
 
 */
 
+import javax.xml.crypto.Data;
 import java.io.*;
 import java.util.ArrayList;
 
@@ -60,12 +61,15 @@ public class PorterStemmerPipe {
     private static final int INC = 50;
     /* unit of size whereby b is increased */
 
+    private DataSinkPipe dataSinkPipe;
+
     private ArrayList<String> cleanedRootArrayList = new ArrayList<>();
 
     public PorterStemmerPipe() {
         b = new char[INC];
         i = 0;
         i_end = 0;
+        this.dataSinkPipe = new DataSinkPipe();
     }
 
     /**
@@ -446,8 +450,7 @@ public class PorterStemmerPipe {
         catch (FileNotFoundException e) {
             System.out.println("file not found");
         }
-
-        System.out.println(cleanedRootArrayList.toString());
+        dataSinkPipe.OrderTopTen(cleanedRootArrayList);
         return cleanedRootArrayList;
     }
 }

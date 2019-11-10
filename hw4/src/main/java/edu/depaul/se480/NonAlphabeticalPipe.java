@@ -13,9 +13,14 @@ import java.util.ArrayList;
 public class NonAlphabeticalPipe {
     private ArrayList<String> noStopwordsArrayList;
     private ArrayList<String> cleanedNonAlphabeticalArrayList = new ArrayList<>();
+    private PorterStemmerPipe porterStemmerPipe;
 
-    public NonAlphabeticalPipe(ArrayList<String> noStopwordsArrayList){
+    public NonAlphabeticalPipe(ArrayList<String> noStopwordsArrayList) throws IOException {
         this.noStopwordsArrayList = noStopwordsArrayList;
+        String tempFile = ArrayListToFile();
+        this.porterStemmerPipe = new PorterStemmerPipe();
+        RemoveNonAlpabeticalPipe();
+        porterStemmerPipe.RootWordsPipe(ArrayListToFile());
     }
 
     public ArrayList<String> RemoveNonAlpabeticalPipe(){
