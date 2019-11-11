@@ -13,6 +13,7 @@ public class DataSinkPipe {
     public DataSinkPipe(){}
 
     public List<Map.Entry<String, Long>> OrderTopTen(ArrayList<String> morphologicalRootsArrayList){
+        long startTime = System.currentTimeMillis();
         Map<String, Long> map = morphologicalRootsArrayList.stream()
                 .collect(Collectors.groupingBy(w -> w, Collectors.counting()));
 
@@ -21,6 +22,8 @@ public class DataSinkPipe {
                 .limit(10)
                 .collect(Collectors.toList());
 
+        long endTime = System.currentTimeMillis();
+        System.out.println("DataSinkPipe Execution time: " + (endTime - startTime));
         System.out.println(result.toString());
         return result;
     }

@@ -18,16 +18,33 @@ public class StopwordsPipe {
     private ArrayList<String> linesArrayList;
     private ArrayList<String> cleanedLinesArrayList = new ArrayList<>();
     private ArrayList<String> cleanedItemizedWordsArrayList = new ArrayList<>();
+    private ArrayList<String> cleanedItemizedWordsArrayListForLoop = new ArrayList<>();
     private String fileName;
     private NonAlphabeticalPipe nextPipe;
 
     public StopwordsPipe(String fileName) throws IOException {
+//        long startTime = System.currentTimeMillis();
+//        this.fileName = fileName;
+//        ReadStopwordsFile();
+//        ReadTestFile();
+//        CleanTestFile();
+//        ItemizeLines();
+//        ArrayList<String> removedArray = RemoveStopwords();
+//        long endTime = System.currentTimeMillis();
+//        System.out.println("StopwordsPipe Execution time: " + (endTime - startTime));
+//        this.nextPipe = new NonAlphabeticalPipe(removedArray);
+
+        long startTime = System.currentTimeMillis();
         this.fileName = fileName;
         ReadStopwordsFile();
         ReadTestFile();
         CleanTestFile();
         ItemizeLines();
-        this.nextPipe = new NonAlphabeticalPipe(RemoveStopwords());
+        ArrayList<String> removedArray = RemoveStopwordsForLoop();
+        long endTime = System.currentTimeMillis();
+        System.out.println("StopwordsPipe Execution time (for loop): " + (endTime - startTime));
+        this.nextPipe = new NonAlphabeticalPipe(removedArray);
+
     }
 
     // source (1) used
@@ -78,9 +95,20 @@ public class StopwordsPipe {
         }
     }
 
+    // source (1) used
     public ArrayList<String> RemoveStopwords(){
         boolean removedStopwordsArrayListBool = cleanedItemizedWordsArrayList.removeAll(stopwordsArrayList);
         if (removedStopwordsArrayListBool) return cleanedItemizedWordsArrayList;
         else return cleanedItemizedWordsArrayList;
+    }
+
+    // source (1) used
+    public ArrayList<String> RemoveStopwordsForLoop(){
+        for (String words : cleanedItemizedWordsArrayList) {
+            if (!(stopwordsArrayList.contains(words))) {
+                cleanedItemizedWordsArrayListForLoop.add(words);
+            }
+        }
+        return cleanedItemizedWordsArrayListForLoop;
     }
 }

@@ -405,6 +405,7 @@ public class PorterStemmerPipe {
     }
 
     public ArrayList<String> RootWordsPipe(String nonRootFilename){
+        long startTime = System.currentTimeMillis();
         char[] w = new char[501];
         String userFilepath = System.getProperty("user.dir");
         String testfileFilepath = userFilepath + "/" + nonRootFilename;
@@ -456,6 +457,8 @@ public class PorterStemmerPipe {
             System.out.println("file not found");
         }
 
+        long endTime = System.currentTimeMillis();
+        System.out.println("PorterStemmerPipe Execution time: " + (endTime - startTime));
         dataSinkPipe.OrderTopTen(cleanedRootArrayList);
         return cleanedRootArrayList;
     }

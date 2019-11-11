@@ -18,10 +18,13 @@ public class NonAlphabeticalPipe {
     private PorterStemmerPipe porterStemmerPipe;
 
     public NonAlphabeticalPipe(ArrayList<String> noStopwordsArrayList) throws IOException {
+        long startTime = System.currentTimeMillis();
         this.noStopwordsArrayList = noStopwordsArrayList;
         this.porterStemmerPipe = new PorterStemmerPipe();
         RemoveNonAlpabeticalPipe();
         String tempFile = ArrayListToFile();
+        long endTime = System.currentTimeMillis();
+        System.out.println("NonAlphabeticalPipe Execution time: " + (endTime - startTime));
         porterStemmerPipe.RootWordsPipe(tempFile);
     }
 

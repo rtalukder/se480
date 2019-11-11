@@ -12,7 +12,10 @@ public class ReadInputFile {
     StopwordsPipe stopwordsPipe;
 
     public ReadInputFile(String filename) throws IOException {
+        long startTime = System.currentTimeMillis();
         this.filename = filename;
+        long endTime = System.currentTimeMillis();
+        System.out.println("ReadInputFile Execution time: " + (endTime - startTime));
         stopwordsPipe = new StopwordsPipe(filename);
     }
 

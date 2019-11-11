@@ -7,9 +7,19 @@ public class main {
     public static void main(String[] args) {
 
         try {
-            ReadInputFile usdeclar = new ReadInputFile("usdeclar.txt");
-            ReadInputFile alice30 = new ReadInputFile("alice30.txt");
-            ReadInputFile kjbible = new ReadInputFile("kjbible.txt");
+            System.out.println("#### Execution times for the US Declaration of Independence (times in ms ) ####"  + "\n");
+            ReadInputFile USDeclaration = new ReadInputFile("usdeclar.txt");
+
+            System.out.println();
+
+            System.out.println("#### Execution times for Alice's Adventure in Wonderland (times in ms ) ####" + "\n");
+            ReadInputFile Alice = new ReadInputFile("alice30.txt");
+
+            System.out.println();
+
+            System.out.println("#### Execution times for the King James Bible (times in ms ) ####" + "\n");
+            ReadInputFile KJBible = new ReadInputFile("kjbible.txt");
+
         }
         catch (IOException exception){
             System.out.printf("IO Exception caught.");
